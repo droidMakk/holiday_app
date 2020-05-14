@@ -7,17 +7,27 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
+import { SafeAreaView, StatusBar } from 'react-native';
+import { Provider as PaperProvider, DefaultTheme } from 'react-native-paper';
 
 import Calendar from './src/Calendar';
+
+const theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: 'tomato',
+    accent: 'yellow',
+  },
+};
 
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      <StatusBar backgroundColor={theme.colors.primary} />
+      <PaperProvider theme={theme}>
         <Calendar />
-      </SafeAreaView>
+      </PaperProvider>
     </>
   );
 };

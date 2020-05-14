@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "903821659307",
+    "firebase_url": "https://pomdroapp.firebaseio.com",
+    "project_id": "pomdroapp",
+    "storage_bucket": "pomdroapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903821659307:android:1d4d7e20ae0b2e6d043bee",
+        "android_client_info": {
+          "package_name": "com.holiday_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903821659307-u8n8mahcc3b1b7jk3db6kr4j6bm6shab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.holiday_app",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "903821659307-ku6mml02optb0ses35r4rrtqkiqmufm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWlN9GH68prl2BMqur6n2FsqatX1hHeg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903821659307-ku6mml02optb0ses35r4rrtqkiqmufm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
