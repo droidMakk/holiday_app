@@ -1,8 +1,10 @@
 import React from 'react';
-import { View, Text, ScrollView } from 'react-native';
-import { List } from 'react-native-paper';
-import { GoogleSignin } from '@react-native-community/google-signin';
-import { CLIENT_ID } from 'react-native-dotenv';
+import {View, Text, ScrollView, ActivityIndicator} from 'react-native';
+import {List} from 'react-native-paper';
+import {GoogleSignin} from '@react-native-community/google-signin';
+import {CLIENT_ID} from 'react-native-dotenv';
+
+import styles from './styles';
 
 const calendar_id = 'en.indian%23holiday%40group.v.calendar.google.com';
 const base_url =
@@ -44,7 +46,11 @@ const Calendar = () => {
   let content;
 
   if (loading) {
-    content = <Text>Loading</Text>;
+    content = (
+      <View style={styles.progress_view}>
+        <ActivityIndicator color="tomato" size="large" />
+      </View>
+    );
   }
 
   if (data.length && !loading) {
@@ -64,7 +70,7 @@ const Calendar = () => {
     content = <Text>No Data</Text>;
   }
 
-  return <ScrollView style={{ height: 200 }}>{content}</ScrollView>;
+  return <ScrollView>{content}</ScrollView>;
 };
 
 export default Calendar;
